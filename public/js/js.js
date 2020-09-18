@@ -276,17 +276,17 @@ function liBgColor() {
     if(hideCompleted){
         $("li:visible").each(function(indx){
             if(indx % 2 !== 0){
-                $(this).css("background-color", "#f5f7f7");
+                $(this).css("background-color", "rgba(43, 42, 41, 0.6)");
             }else{
-				$(this).css("background-color", "white");
+				$(this).css("background-color", "rgb(0, 0, 0)");
 			}
         });
     } else {
         $("li").each(function(indx){
             if(indx % 2 !== 0){
-                $(this).css("background-color", "#f5f7f7");
+                $(this).css("background-color", "rgba(43, 42, 41, 0.6)");
             }else{
-				$(this).css("background-color", "white");
+				$(this).css("background-color", "rgb(0, 0, 0)");
 			}
         });
     }
