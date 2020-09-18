@@ -29,7 +29,7 @@ $(".fa-minus-circle").on("click", function(){
 // Search - show/hide search form
 $(".fa-search").click(function(){
     $("input[type='text']").val("");
-    $("input[type='text']").attr("placeholder", "");
+    $("input[type='text']").attr("placeholder", "Search");
     if(!$("input[type='text']").hasClass("hide") && !search){
         // Don't toggle if input is displayed and search is false
     } else {
@@ -279,7 +279,7 @@ function liBgColor() {
             if(indx % 2 !== 0){
                 $(this).css("background-color", "rgba(43, 42, 41, 0.6)");
             }else{
-				$(this).css("background-color", "rgb(0, 0, 0)");
+				$(this).css("background-color", "rgba(0, 0, 0, 0.6)");
 			}
         });
     } else {
@@ -287,7 +287,7 @@ function liBgColor() {
             if(indx % 2 !== 0){
                 $(this).css("background-color", "rgba(43, 42, 41, 0.6)");
             }else{
-				$(this).css("background-color", "rgb(0, 0, 0)");
+				$(this).css("background-color", "rgba(0, 0, 0, 0.6)");
 			}
         });
     }
