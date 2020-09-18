@@ -108,7 +108,8 @@ $("ul").on("click", "li", function(){
 $("ul").on("click", "li span", function(event){
     $(this).parent().fadeOut(function(){
         let id = Number($(this).attr("id"));
-        if(id < 0){
+        liBgColor();
+		if(id < 0){
             deleteList(id);
         }else{
             deleteItem(id);
@@ -273,7 +274,7 @@ function deleteItem(id){
 
 // Set gray bg to every second li
 function liBgColor() {
-    if(hideCompleted){
+    if(mainPage || hideCompleted){
         $("li:visible").each(function(indx){
             if(indx % 2 !== 0){
                 $(this).css("background-color", "rgba(43, 42, 41, 0.6)");
