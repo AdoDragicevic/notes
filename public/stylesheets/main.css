@@ -5,6 +5,7 @@ html, body {
 	width: 100%;
 	max-height: 100%;
 	max-width: 100%;
+	overflow: hidden;
 }
 
 
@@ -12,12 +13,10 @@ body {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-position: center center;
 	background-position: cover;
-    background-repeat: no-repeat;
     cursor: pointer;
 	color: #e36e14;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.4px;
-	overflow: hidden;
 }
 
 
@@ -38,7 +37,6 @@ input {
 
 h3 {
     text-align: center;
-    margin: 0;
 	margin: 15px 0;
     padding: 10px 0 10px 0;
     letter-spacing: 3px;
@@ -115,6 +113,7 @@ i {
 	color: white;
 }
 
+
 .right {
 	float: right;
 }
@@ -122,8 +121,8 @@ i {
 
 #container {
 	max-width: 900px;
-	max-height: 100%;
-	margin: 2% auto;
+	max-height: 90%;
+	margin: 1% auto;
     border: 1px solid #203a63;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -131,6 +130,9 @@ i {
 }
 
 
+
+
+/* Custom scrollbar */
 #container::-webkit-scrollbar {
   width: 10px;
 }
@@ -148,23 +150,31 @@ i {
 }
 
 
+
+
+/* On smaller devices */
+
 @media (max-width: 899px) {
-	#container {
-		width: auto;
-		min-height: 100%;
-		margin: 0;
-		padding: 20px 2%;
-		border: 1px solid black;
-	}
 	i {
 		font-size: 1.8rem;
 	}
+	h3 {
+		font-size: 26px;
+		margin: 2px 0;
+	}
 	.nav {
-		pistion: fixed;
 		width: 90%;
 		margin: 1px auto;
 		padding: 10px;
+		margin: 10px auto;
 		background-color: rgba(255, 255, 255, 0.2);
 		border-radius: 25px;
+	}
+	#container {
+		width: auto;
+		margin: 0;
+		min-height: 100%;
+		padding: 2% 2%;
+		border: none;
 	}
 }
