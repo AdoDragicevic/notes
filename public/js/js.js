@@ -6,6 +6,12 @@ let listId = 0;
 let itemId = 0;
 let listIndex;
 
+
+
+//:::::: Seed the list ::::::
+seed();
+
+
 // :::::ICONS::::::
 
 // Plus - toggle input
@@ -43,7 +49,8 @@ $(".fa-search").click(function(){
 
 // Checked - show/hide checked items
 $(".fa-check-circle").on("click", function(){
-    hideCompleted = !hideCompleted;
+    listContent();
+	hideCompleted = !hideCompleted;
     showCompleted();
 	liBgColor();
 });
@@ -291,4 +298,45 @@ function liBgColor() {
 			}
         });
     }
+}
+
+// seed the list
+function seed(){
+	let item = {
+			title: "I am a list",
+			id: 0,
+			listItems: [
+				{
+					item: "I am a list item",
+					id: 1,
+					completed: false
+				},
+				{
+					item: "Cilck me to mark as complete!",
+					id: 2,
+					completed: false
+				},{
+					item: "Click 'plus' to add items",
+					id: 3,
+					completed: false
+				},
+				{
+					item: "Click 'minus' to show traschans",
+					id: 4,
+					completed: false
+				},
+				{
+					item: "Click 'tick' to hide/show completed",
+					id: 5,
+					completed: false
+				},
+				{
+					item: "Search with 'magnifying glass'",
+					id: 6,
+					completed: false
+				}
+			]
+		}
+	lists.push(item);
+	showLists();
 }
