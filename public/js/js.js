@@ -116,7 +116,7 @@ $("ul").on("click", "li span", function(event){
     $(this).parent().fadeOut(function(){
         let id = Number($(this).attr("id"));
         liBgColor();
-		if(id < 0){
+		if(id <= 0){
             deleteList(id);
         }else{
             deleteItem(id);
