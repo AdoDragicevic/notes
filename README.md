@@ -1,14 +1,19 @@
-# notes
+# Notes
 
-First Portfolio - Project II
+## One of the projects for my first portfolio. A to-do list made with jQuery. This project was a great way to exercise working with arrays and jQuery. :memo: :pencil:
 
-This project was a great way to exercise working with arrays and jQuery.
+### Try it on Heroku
 
-Functionality:
-- create lists, 
-- add items, 
-- mark as complete, 
-- show/hide completed, 
-- search, 
-- delete; 
-- data is stored locally until page is refreshed
+https://ado-notes.herokuapp.com/
+
+### Functionalities
+* create lists 
+* add items 
+* mark as complete 
+* show/hide completed 
+* search 
+* delete
+
+### Using
+* jQuery
+* CSS3
